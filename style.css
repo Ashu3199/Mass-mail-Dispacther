@@ -4,26 +4,11 @@
   box-sizing: border-box;
   overflow-x:hidden;
 }
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent; /* Optional: just to prevent flashing */
-}
 
-/* Hide scrollbar for other browsers */
-html {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
 .spinner {
   display: none;
 }
-.cardEffect {
-  transition: transform 4s ease-in-out;
-}
 
-.cardEffect:hover {
-  transform: scale(1.05) !important;
-}
 
 /* animations  */
 .slide-in-left {
