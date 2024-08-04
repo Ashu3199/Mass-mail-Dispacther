@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* Optional: just to prevent flashing */
+}
+
+/* Hide scrollbar for other browsers */
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.spinner {
+  display: none;
+}
+.cardEffect {
+  transition: transform 4s ease-in-out;
+}
+
+.cardEffect:hover {
+  transform: scale(1.05) !important;
+}
+
+/* animations  */
+.slide-in-left {
+  animation: slideInLeft 1s forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 1s forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.title {
+  font-family: "Arial", sans-serif;
+  color: #3ba554;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  background: linear-gradient(135deg, #1f2d22, #1e5e2e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
